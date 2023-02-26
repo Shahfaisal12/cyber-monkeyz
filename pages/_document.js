@@ -1,15 +1,19 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import Header from './Header'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Header from './Header';
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-      <Header />
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html lang="en">
+        <Head />
+        <body>
+          <Header />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default MyDocument;
