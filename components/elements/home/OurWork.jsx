@@ -37,13 +37,13 @@ const OurWork = () => {
     return (
         <div className='ourWork-section py-5'>
             <div className="container">
-                <h1 className='title mb-5'>Our Work..</h1>
+                <h1 className='title mb-5' data-aos="fade-up-right">Our Work..</h1>
                 <div className="carousel-section">
                     <Carousel
                         arrows={false}
                         swipeable={true}
                         draggable={true}
-                        showDots={false}
+                        showDots={true}
                         responsive={responsive}
                         ssr={true} // means to render carousel on server-side.
                         infinite={true}
@@ -57,7 +57,7 @@ const OurWork = () => {
                         // itemClass="carousel-item-padding-40-px"
                     >
                         {carsouselImage.map((item) => (
-                            <div className='bg-img' key={item.id}>
+                            <div className='bg-img' key={item.id} data-aos="fade-up">
                                 <img src={item.img} className='img-fluid' alt="" />
                             </div>
                         ))}

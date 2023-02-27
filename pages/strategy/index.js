@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Hero from "../../components/elements/strategy/Hero";
+import LetsTalk from "../../components/elements/strategy/LetsTalk";
 import OurExperience from "../../components/elements/strategy/OurExperience";
 import WhyStrategy from "../../components/elements/strategy/WhyStrategy";
 
@@ -15,6 +16,7 @@ const index = () => {
       <Hero />
       <WhyStrategy />
       <OurExperience />
+      <LetsTalk />
     </>
   );
 };

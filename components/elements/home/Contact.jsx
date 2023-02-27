@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4 d-none d-md-block">
-              <div className="img-section">
+              <div className="img-section" data-aos="fade-right">
                 <img
                   src="assets/monkey-head.png"
                   className="img-fluid"
@@ -16,8 +16,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-md-8">
-              <h1 className="title mb-5">Let's get in touch..</h1>
-              <div className="mail-section">
+              <h1 className="title mb-5" data-aos="fade-left">Let's get in touch..</h1>
+              <div className="mail-section" data-aos="flip-down">
                 <form>
                   <div className="d-flex gap-4 justify-content-between">
                     <div class="form-group row w-100">
@@ -90,12 +90,12 @@ const Contact = () => {
               </div>
               <div className="row mt-3 text-center">
                 <div className="col-md-6">
-                  <div className="contact-footer">
+                  <div className="contact-footer" data-aos="fade-left">
                     http://info@cybermonkey.net
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="contact-footer">Phone: +31641884661</div>
+                  <div className="contact-footer" data-aos="fade-right">Phone: +31641884661</div>
                 </div>
               </div>
             </div>
