@@ -1,9 +1,6 @@
 import React from "react";
-import Contact from "../components/elements/home/Contact";
-import Hero from "../components/elements/home/Hero";
-import OurServices from "../components/elements/home/OurServices";
-import OurWork from "../components/elements/home/OurWork";
-import Head from 'next/head'
+import Head from "next/head";
+import Home from "./home/Home";
 
 const index = () => {
   return (
@@ -13,10 +10,7 @@ const index = () => {
         <meta name="Shah Faisal" content="this is landing page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
-      <OurServices />
-      <OurWork />
-      <Contact />
+      <Home />
     </>
   );
 };

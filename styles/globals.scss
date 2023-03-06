@@ -1,10 +1,9 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Preahvihear&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -41,6 +40,14 @@ a {
   --dark-text-clr: #333333;
   --light-text-clr: #777777
 }
+
+$background: #25318D;
+$white: #FFFFFF;
+$yellow-color: #d6fb51;
+$textdark: #131946;
+$black: #000000;
+$lightBlue: rgb(200 238 245);
+$creamColor: rgb(232 230 230);
 
 @mixin para {
   color: var(--white-clr);
@@ -154,22 +161,47 @@ a {
 /* /////////////////////////// HEADER SECTION //////////////////////////////////////// */
 
 .header-section {
-  background-color: var(--background);
+  background-color: $background;
+
+  .dropdown-parent {
+    display: inline-block;
+    position: relative;
+
+    .dropdown-list {
+      display: none;
+      position: absolute;
+      background-color: #000000;
+      min-width: 100px;
+      top: 60px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+
+      li{
+        list-style: none;
+        a{
+          font-size: 10px;
+          text-decoration: none;
+          line-height: normal ;
+        }
+      }
+    }
+  }
+
+  .dropdown-parent:hover  .dropdown-list{
+    display: block;
+  }
 
   ul li {
     margin: 5px;
 
     a {
-      background-color: var(--header-btn-bg);
-      color: var(--header-btn-clr) !important;
-      border-radius: 5px;
-      width: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      color: $yellow-color;
+      font-size: 17px;
+      line-height: 60px;
+      font-weight: 400;
       font-size: 13px;
+
       &:hover {
-        background-color: #b0bac5;
+        color: $white;
       }
     }
   }
@@ -177,120 +209,13 @@ a {
   @media only screen and (max-width: 600px) {
     ul li {
       margin-top: 15px;
-      a{
+
+      a {
         width: 100%;
       }
     }
   }
 }
-
-
-/* //////////////////////////// HERO SECTION /////////////////////////////////// */
-
-.Hero-section {
-  background-color: var(--background);
-
-  .content-section {
-    .title {
-      font-family: 'Orbitron';
-      font-size: 16px;
-      color: var(--header-clr);
-    }
-
-    .sub-title {
-      font-family: 'Orbitron';
-      font-size: 16px;
-      color: var(--header-clr);
-    }
-
-    .para p {
-      @include para;
-    }
-
-    .span {
-      color: var(--sub-header-clr);
-
-    }
-  }
-
-  .img-section {
-    img {
-      margin-bottom: -85px;
-      object-fit: none;
-      // object-fit: fill;
-    }
-  }
-}
-
-/* /////////////////////  Our Services  ////////////////////////// */
-
-.ourServices-section {
-
-  .title {
-    color: var(--color-purple);
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .our-service {
-
-    background-color: var(--background);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    padding: 14px 80px 18px 36px;
-    cursor: pointer;
-    transition: .3s;
-
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-    }
-
-    .service-title {
-      text-align: center;
-      color: var(--sub-header-clr);
-      font-size: 13px;
-    }
-
-    ul {
-      padding: 0px;
-
-      li {
-        font-size: 9px;
-        color: var(--white-clr);
-      }
-    }
-  }
-}
-
-/* /////////////////////////   Our Workd Section ////////////////////// */
-
-.ourWork-section {
-  background-color: var(--background);
-
-  .title {
-    color: var(--white-clr);
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .bg-img {
-    background-color: var(--header-btn-bg);
-    border-radius: 10px;
-    margin: 0px 30px;
-
-    img {
-      cursor: pointer;
-      transition: .3s;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-  }
-}
-
 
 /* /////////////////////////////  Contact Section  //////////////// */
 
@@ -327,11 +252,11 @@ a {
 
   /* //////////////////////// Media Query ///////////////////////// */
 
-@media only screen and (max-width: 600px) {
-  .mail-section {
-    padding: 20px 10px 20px 10px;
+  @media only screen and (max-width: 600px) {
+    .mail-section {
+      padding: 20px 10px 20px 10px;
+    }
   }
-}
 }
 
 
@@ -476,3 +401,53 @@ a {
   }
 }
 
+
+
+////////////////////////////// Footer section  //////////////////
+
+.Footer-section {
+  background-color: $background;
+
+  .contact-sec {
+
+    .title {
+      font-size: 25px;
+      font-weight: 400;
+      color: #e8e6e6;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400px;
+      color: #e8e6e6;
+    }
+  }
+
+  .social-icons {
+    img {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+//////////////////////////////////  Chat button whole  ///////////////
+
+
+.chat-button {
+  .btn-chat {
+    color: rgb(255, 255, 255);
+    background-color: rgb(146, 0, 107);
+    border-radius: 0px;
+    box-shadow: 0 0 3px 0 hsl(0deg 1% 71% / 50%);
+    min-width: 150px;
+    max-width: 340px;
+    height: 50px;
+    font-size: 18px;
+
+    &:hover {
+      background-color: rgb(146, 0, 107);
+      color: rgb(255, 255, 255);
+    }
+  }
+}

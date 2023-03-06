@@ -2,16 +2,17 @@ import "../styles/globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
       offset: 200,
       duration: 600,
-      easing: 'ease-in-sine',
+      easing: "ease-in-sine",
       delay: 10,
     });
   }, []);
@@ -27,7 +28,9 @@ function MyApp({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
