@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header-section">
-      <div className="container-fluid">
+      <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
@@ -43,7 +43,7 @@ const Header = () => {
                 <div className="dropdown-parent">
                 <li className="nav-item">
                   <Link
-                    href="/strategy"
+                    href="/services"
                     className="nav-link"
                     aria-current="page"
                   >

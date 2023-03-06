@@ -36,7 +36,7 @@ $yellow-color: #a0ca06;
 .contact_section {
 
     .bg_title {
-        background-color: $background-color;
+        background-color: $white;
 
         .title {
             @include title;
@@ -64,11 +64,12 @@ $yellow-color: #a0ca06;
         input:active {
             border: 1px solid $red-Color;
         }
-        
+
 
         .button_div {
             display: flex;
             justify-content: end;
+
             .btn_submit {
                 background-color: $yellow-color;
                 border-radius: 0px;
@@ -78,7 +79,7 @@ $yellow-color: #a0ca06;
                 font-size: 24px;
                 line-height: 31px;
 
-                &:hover{
+                &:hover {
                     color: $black;
                     background-color: transparent;
                 }

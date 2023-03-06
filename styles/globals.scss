@@ -163,7 +163,7 @@ body {
         text-align: center;
 
         a {
-          font-size: 10px;
+          font-size: 17px;
           text-decoration: none;
           line-height: normal;
         }
@@ -181,10 +181,9 @@ body {
 
     a {
       color: $yellow-color;
-      font-size: 17px;
+      font-size:17px;
       line-height: 60px;
-      font-weight: 400;
-      font-size: 13px;
+      font-weight: 600;
 
       &:hover {
         color: $white;

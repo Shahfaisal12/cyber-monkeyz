@@ -15,13 +15,13 @@ const overService = [
         image: "assets/home/LogoDesigning.jpeg",
         title: "Content",
         items: ["Copywriting", "Blog", "Photo", "Video"],
-        path: "Content",
+        path: "content",
     },
     {
         image: "assets/home/CreativeWork.jpg",
         title: "Marketing",
         items: ["Social Media", "Campaigning", "Email", "Analytics"],
-        path: "Marketing",
+        path: "marketing",
     },
 ];
 

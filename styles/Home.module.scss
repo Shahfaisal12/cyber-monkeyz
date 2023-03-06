@@ -19,6 +19,13 @@ $creamColor: rgb(232 230 230);
     color: $textdark;
 }
 
+@mixin h1-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46px;
+    color: $textdark;
+}
+
 
 @mixin sub-title {
     font-size: 25px;
@@ -50,31 +57,6 @@ $creamColor: rgb(232 230 230);
     position: relative;
     background: $background;
 
-    // &:before {
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     border-radius: 0% 99% 9% 12%;
-    //     width: 818px;
-    //     height: 195px;
-    //     background-color: white;
-    //     left: -45px;
-    //     top: 473px;
-    // }
-
-    // &:after {
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     border-radius: 0% 59%;
-    //     width: 777px;
-    //     height: 124px;
-    //     background-color: $background;
-    //     right: 0;
-    //     top: 483px;
-    //     z-index: -1;
-    // }
-
     .content_section {
         .title {
             @include h1-title;
@@ -100,6 +82,10 @@ $creamColor: rgb(232 230 230);
 
     .title {
         @include title;
+    }
+
+    h1{
+        @include  h1-title ;
     }
 
     .our_service {

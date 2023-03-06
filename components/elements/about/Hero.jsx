@@ -25,19 +25,25 @@ const aboutData = [
 
 const Hero = () => {
     return (
-        <div className={` ${styleabout.about_section}`}>
-            <div className={` ${styleabout.bg_title} py-3`}>
+        <div className={` ${styleabout.about_section} overflow-hidden`}>
+            <div className={` ${styleabout.bg_title} position-relative`}>
                 <div className="container">
-                    <div className={styleabout.title}>About us</div>
+                    <div className="h-100 d-flex align-items-center position-absolute">
+                        <div className={styleabout.title}>About us</div>
+                    </div>
                 </div>
+                
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#DFDEF5" fill-opacity="1" d="M0,256L120,256C240,256,480,256,720,213.3C960,171,1200,85,1320,42.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+          </svg>
             </div>
-            <div className="container pt-4">
+            <div className="container">
                 <div className="row">
                     {aboutData.map((item, index) => (
-                        <div className="row" key={index}>
+                        <div className={`row ${index === 0 ? "" : "my-5"}`} key={index}>
                             {index % 2 === 0 ? (
                                 <>
-                                    <div className="col-md-6 my-5 d-flex align-items-center">
+                                    <div className="col-md-6 d-flex align-items-center">
                                         <img
                                             src={item.img}
                                             alt="Avatar"
