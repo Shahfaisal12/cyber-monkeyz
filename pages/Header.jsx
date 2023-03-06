@@ -51,10 +51,10 @@ const Header = () => {
                   </Link>
 
                   <div className="dropdown-list">
-                    <ul>
+                    <ul className="p-0">
                       <li>
                         <Link
-                          href="/"
+                          href="/strategy"
                           className=""
                         >
                           Services
@@ -62,7 +62,7 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          href="/"
+                          href="/design"
                           className=""
                         >
                           Design
@@ -70,7 +70,7 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          href="/"
+                          href="/content"
                           className=""
                         >
                           Content
@@ -78,7 +78,7 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          href="/"
+                          href="/marketing"
                           className=""
                         >
                           Marketing

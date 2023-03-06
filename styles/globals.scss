@@ -174,20 +174,24 @@ $creamColor: rgb(232 230 230);
       min-width: 100px;
       top: 60px;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+      z-index: 999;
 
-      li{
+      li {
         list-style: none;
-        a{
+        text-align: center;
+
+        a {
           font-size: 10px;
           text-decoration: none;
-          line-height: normal ;
+          line-height: normal;
         }
       }
     }
   }
 
-  .dropdown-parent:hover  .dropdown-list{
+  .dropdown-parent:hover .dropdown-list {
     display: block;
+
   }
 
   ul li {
@@ -260,101 +264,45 @@ $creamColor: rgb(232 230 230);
 }
 
 
-/* /////////////////////////////// Strategy Hero SEction ///////////////////// */
+// /* //////////////////////// OUR Experience //////////////////// */
 
-.stategy-hero-section {
-  background-color: var(--background);
+// .ourExperience-section {
 
-  .content-section {
-    .title {
-      font-family: 'Roboto';
-      font-size: 19px;
-      color: var(--sub-header-clr);
-      font-weight: bold;
-    }
+//   .title {
+//     font-size: 16px;
+//     font-weight: bold;
+//   }
 
-    .sub-title {
-      font-family: 'Roboto';
-      font-size: 16px;
-      color: var(--sub-header-clr);
-    }
+//   .our-service {
 
-    .para p {
-      @include para;
-    }
-  }
+//     background-color: var(--background);
+//     border-radius: 10px;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+//     padding: 14px 80px 18px 36px;
+//     cursor: pointer;
+//     transition: .3s;
 
-  .img-section {
-    img {
-      margin-right: -97px;
-      object-fit: none;
-    }
-  }
-}
+//     &:hover {
+//       transform: scale(1.1);
+//       box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+//     }
 
-/* //////////////////////////////// Why Stategy Section /////////////// */
+//     .service-title {
+//       text-align: center;
+//       color: var(--sub-header-clr);
+//       font-size: 13px;
+//     }
 
-.whyStrategy-section {
-  .content-section {
-    .title {
-      font-family: 'Roboto';
-      font-size: 13px;
-      color: var(--primary-clr);
-      font-weight: bold;
-    }
+//     ul {
+//       padding: 0px;
 
-    .para {
-      p {
-        @include para;
-        color: var(--dark-text-clr) !important;
-      }
-
-      .text-light {
-        color: var(--light-text-clr) !important;
-      }
-    }
-  }
-}
-
-/* //////////////////////// OUR Experience //////////////////// */
-
-.ourExperience-section {
-
-  .title {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .our-service {
-
-    background-color: var(--background);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    padding: 14px 80px 18px 36px;
-    cursor: pointer;
-    transition: .3s;
-
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-    }
-
-    .service-title {
-      text-align: center;
-      color: var(--sub-header-clr);
-      font-size: 13px;
-    }
-
-    ul {
-      padding: 0px;
-
-      li {
-        font-size: 9px;
-        color: var(--white-clr);
-      }
-    }
-  }
-}
+//       li {
+//         font-size: 9px;
+//         color: var(--white-clr);
+//       }
+//     }
+//   }
+// }
 
 
 //////////////////////////// ContactUs Page  //////////////////

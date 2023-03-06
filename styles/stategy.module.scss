@@ -1,0 +1,164 @@
+$white: #FFFFFF;
+$yellow-color: #d6fb51;
+$background: #25318D;
+$colorDarkblue: #25318D;
+$textdark: #131946;
+$black: #000000;
+$lightBlue: rgb(200 238 245);
+$creamColor: rgb(232 230 230);
+
+
+@mixin title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    color: $black;
+}
+
+
+@mixin sub-title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 48px;
+    color: $black;
+}
+
+
+@mixin para {
+    font-size: 20px;
+    font-weight: 400;
+    color: $black;
+    line-height: 30px;
+}
+
+@mixin h6 {
+    font-size: 17px;
+    font-weight: 400;
+    color: $colorDarkblue;
+    line-height: 19px;
+}
+
+@mixin content {
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+    line-height: 21px;
+    // font-family: 'Ubuntu';
+}
+
+
+/* /////////////////////////////// Strategy Hero SEction ///////////////////// */
+
+.stategy_hero_section {
+    background-color: $lightBlue;
+
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $colorDarkblue;
+    }
+
+    .content_section {
+        .title {
+            @include title;
+        }
+
+        .sub_title {
+            @include sub-title;
+        }
+
+        .para p {
+            @include para;
+            padding-right: 120px
+        }
+        h6{
+            @include  h6; 
+        }
+    }
+
+    .img-section {
+        img {
+            margin-right: -97px;
+            object-fit: none;
+        }
+    }
+}
+
+
+
+/* //////////////////////////////// Why Stategy Section /////////////// */
+
+.whyStrategy_section {
+    .content_section {
+      .title {
+       @include title;
+       font-size: 38px;
+      }
+  
+      .para {
+        p {
+          @include para;
+        }
+      }
+    }
+  }
+
+
+  ////////////////// Our Service //////////////
+  
+  .ourExperience_section {
+    background-color: $lightBlue;
+
+    .title {
+        @include title;
+        color: $colorDarkblue;
+        font-size: 35px;
+    }
+
+    .our_service {
+        cursor: pointer;
+
+        .img_sec img {
+            width: 100%;
+            height: 271px;
+            object-fit: cover;
+        }
+
+        .overlay_dev {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $background;
+            padding: 10px;
+
+            .service_title {
+                @include sub-title;
+                color: $white;
+            }
+        }
+
+        ul {
+            display: none;
+
+            li {
+                @include content;
+                list-style-type: '-  ';
+            }
+        }
+    }
+
+
+    .our_service:hover ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    p {
+        @include para;
+    }
+
+}
+

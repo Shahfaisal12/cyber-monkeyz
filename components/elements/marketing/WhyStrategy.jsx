@@ -1,5 +1,5 @@
 import React from "react";
-import styleStrategy from '../../../styles/stategy.module.scss'
+import styleStrategy from "../../../styles/stategy.module.scss";
 
 const WhyStrategy = () => {
   return (
@@ -19,17 +19,18 @@ const WhyStrategy = () => {
               </div>
               <div className={styleStrategy.para}>
                 <p className="my-3 my-md-5" data-aos="fade-left">
-                  A well-defined strategy enables effective alignment of brand
-                  identity, content, SEO, SEA, social media, web, and campaigns,
-                  leading to optimal guidance and agility.
+                  Cyber Monkeyz specialise in enhancing your online visibility.
+                  Our team makes eye-catching content that aligns with your
+                  proposition and conveys your message in the most effective
+                  manner.
                 </p>
                 <p data-aos="fade-up-left">
-                  At Cyber Monkeyz, we are dedicated to help brands and
-                  companies excel in the digital world. We use the
-                  aforementioned strategies to your advantage, that way you get
-                  a competitive edge setting businesses apart in the digital
-                  age. Our promise is to help our clients stand out in the
-                  crowded online marketplace.
+                  We build compelling campaigns leveraging our know-how's in
+                  sharp targeting through online analytics. We strategically
+                  combine Social Media Advertising, SEO, and email marketing to
+                  make the most out of all budget sizes. We give your brand the
+                  edge it needs to stand out. And moreover leave an imprint on
+                  the audience's mind.
                 </p>
               </div>
             </div>

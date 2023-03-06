@@ -1,5 +1,5 @@
 import React from "react";
-import styleStrategy from '../../../styles/stategy.module.scss'
+import styleStrategy from "../../../styles/stategy.module.scss";
 
 const WhyStrategy = () => {
   return (
@@ -19,17 +19,21 @@ const WhyStrategy = () => {
               </div>
               <div className={styleStrategy.para}>
                 <p className="my-3 my-md-5" data-aos="fade-left">
-                  A well-defined strategy enables effective alignment of brand
-                  identity, content, SEO, SEA, social media, web, and campaigns,
-                  leading to optimal guidance and agility.
+                  We will work closely with you to craft a refreshing brand
+                  identity that includes an engaging web design and a functional
+                  visual & UX design. We specialise in both; back-end and
+                  front-end development. From web development to software and
+                  app development, we do it all.
                 </p>
                 <p data-aos="fade-up-left">
-                  At Cyber Monkeyz, we are dedicated to help brands and
-                  companies excel in the digital world. We use the
-                  aforementioned strategies to your advantage, that way you get
-                  a competitive edge setting businesses apart in the digital
-                  age. Our promise is to help our clients stand out in the
-                  crowded online marketplace.
+                  Why us? We will work closely with you to craft a refreshing
+                  brand identity that includes an engaging web design and a
+                  functional visual & UX design. We specialise in both; back-end
+                  and front-end development. From web development to software
+                  and app development, we do it all. ​ Our team of experts excel
+                  in developing designs that hit the mark on all fronts. Cyber
+                  Monkeyz will turn visiting your business online into the
+                  ultimate customer journey.
                 </p>
               </div>
             </div>

@@ -1,8 +1,7 @@
-import React from "react";
-import styleServices from "../../../styles/Home.module.scss";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import React from "react";
+import styleExperience from "../../../styles/stategy.module.scss";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const overService = [
   {
@@ -10,12 +9,6 @@ const overService = [
     title: "Strategy",
     items: ["Content", "SEO", "Social", "Web"],
     path: "strategy",
-  },
-  {
-    image: "assets/home/UX.jpg",
-    title: "Design",
-    items: ["Brand identity", "Web design", "UX design", "Development"],
-    path: "design",
   },
   {
     image: "assets/home/LogoDesigning.jpeg",
@@ -31,30 +24,35 @@ const overService = [
   },
 ];
 
-const OurServices = () => {
+const OurExperience = () => {
   return (
     <>
-      <div className={`${styleServices.ourServices_section} py-5`}>
-        <div className="container">
+      <div className={`${styleExperience.ourExperience_section} py-5`}>
+        <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-md-10">
-              <h1 className={styleServices.title} data-aos="fade-right">
-                Our Services..
+            <div className="col-12 col-md-4">
+              <h1
+                className={` ${styleExperience.title} text-center`}
+                data-aos="fade-right"
+              >
+                Our Expertise..
               </h1>
+            </div>
+            <div className="col-12 col-md-8 mt-3 mt-md-0">
               <div className="row">
                 {overService.map((list, index) => (
-                  <div className="col-md-3  mt-3 mt-md-5" key={index}>
+                  <div className="col-md-4  mt-4 mt-md-5" key={index}>
                     <Link href={`/${list.path}`} passHref>
                       <div
-                        className={` ${styleServices.our_service} position-relative`}
+                        className={` ${styleExperience.our_service} position-relative`}
                         data-aos="flip-left"
                       >
-                        <div className={styleServices.img_sec}>
+                        <div className={styleExperience.img_sec}>
                           <img src={list.image} className="img-fluid" alt="" />
                         </div>
-                        <div className={styleServices.overlay_dev}>
+                        <div className={styleExperience.overlay_dev}>
                           <div
-                            className={`${styleServices.service_title}  mb-3 `}
+                            className={`${styleExperience.service_title}  mb-3 `}
                           >
                             {list.title}
                           </div>
@@ -79,22 +77,6 @@ const OurServices = () => {
                   </div>
                 ))}
               </div>
-              <div className="row mt-5">
-                <p>
-                  We offer a wide range of{" "}
-                  <span>
-                    digital solutions to help your businesses strive and prosper
-                    online. Including: digital marketing, social media
-                    management, SEO, content creation, web development,
-                  </span>{" "}
-                  and <span>software development</span>.
-                </p>
-                <p>
-                  Whether you're a small business just starting out, or a large
-                  corporation looking to expand your digital presence; we have
-                  the right skills and expertise to help you achieve your goals.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -103,4 +85,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default OurExperience;
