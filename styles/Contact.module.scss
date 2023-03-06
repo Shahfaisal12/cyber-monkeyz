@@ -1,0 +1,89 @@
+$white: #FFFFFF;
+$background: #25318D;
+$black: #000000;
+$lightBlue: rgb(200 238 245);
+$creamColor: rgb(232 230 230);
+$background-color : #DFDEF5;
+$textdark: #131946;
+
+$red-Color: #490036;
+$yellow-color: #a0ca06;
+
+@mixin title {
+    font-size: 48px;
+    font-weight: 400;
+    color: $textdark;
+}
+
+
+@mixin sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: $black;
+}
+
+
+@mixin para {
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+    line-height: 23px;
+}
+
+
+//////////////////////
+
+.contact_section {
+
+    .bg_title {
+        background-color: $background-color;
+
+        .title {
+            @include title;
+        }
+    }
+
+    .sub_title {
+        @include sub-title;
+    }
+
+    .form_section {
+
+        input,
+        textarea {
+            border: 2px solid $red-Color;
+            border-radius: 0px;
+            box-shadow: none;
+
+            &:hover {
+                border: 1px solid $red-Color;
+            }
+        }
+
+        input:focus,
+        input:active {
+            border: 1px solid $red-Color;
+        }
+        
+
+        .button_div {
+            display: flex;
+            justify-content: end;
+            .btn_submit {
+                background-color: $yellow-color;
+                border-radius: 0px;
+                width: 150px;
+                padding: 8px;
+                color: $white;
+                font-size: 24px;
+                line-height: 31px;
+
+                &:hover{
+                    color: $black;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+}

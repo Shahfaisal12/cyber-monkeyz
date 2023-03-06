@@ -1,0 +1,103 @@
+$white: #FFFFFF;
+$black: #000000;
+$red-color: rgb(146, 0, 107);
+
+@mixin title {
+    font-size: 48px;
+    font-weight: 400;
+    color: $white;
+}
+
+
+@mixin sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: $white;
+}
+
+
+@mixin para {
+    font-size: 16px;
+    font-weight: 600;
+    color: $black;
+    line-height: 23px;
+}
+
+@mixin content {
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+    line-height: 21px;
+}
+
+
+//////////////////////
+
+.work_section {
+
+    .bg_title {
+        background-color: $red-color;
+
+        .title {
+            @include title;
+        }
+
+        p {
+            @include sub-title;
+        }
+    }
+
+
+    .img_overlay {
+        position: relative;
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+
+        }
+
+        .text_sec {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            width: 100%;
+            padding: 40px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h6 {
+                @include para;
+            }
+
+            p {
+                @include content;
+            }
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+        }
+        &:hover .image {
+            opacity: 0.3;
+          }
+    }
+}

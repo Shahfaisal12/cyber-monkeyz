@@ -1,16 +1,15 @@
-import Head from "next/head";
 import React from "react";
-import Contact from "../../components/elements/contact/Contact";
+import Hero from "../../components/elements/work/Hero";
 
 const index = () => {
   return (
     <>
       <Head>
-        <title>Contact Page</title>
+        <title>Work Page</title>
         <meta name="Shah Faisal" content="this is Contact Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Contact />
+      <Hero />
     </>
   );
 };

@@ -1,0 +1,50 @@
+$white: #FFFFFF;
+$black: #000000;
+$lightBlue: rgb(200 238 245);
+$red-Color: #490036;
+
+@mixin title {
+    font-size: 45px;
+    font-weight: 400;
+    color: $red-Color;
+}
+
+
+@mixin sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: $black;
+}
+
+
+@mixin para {
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+    line-height: 23px;
+}
+
+
+//////////////////////
+
+.about_section {
+
+    .bg_title {
+        background-color: $lightBlue;
+
+        .title {
+            @include title;
+        }
+    }
+
+    .content_sec {
+
+        .title {
+            @include sub-title;
+        }
+
+        .para {
+            @include para;
+        }
+    }
+}
