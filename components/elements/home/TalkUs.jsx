@@ -4,7 +4,7 @@ import styletalk from "../../../styles/Home.module.scss";
 
 const TalkUs = () => {
   return (
-    <div className={`${styletalk.talkUs_section} py-5`}>
+    <div className={`${styletalk.talkUs_section} pb-5`}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-8">

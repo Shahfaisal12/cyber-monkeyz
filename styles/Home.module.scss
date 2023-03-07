@@ -23,7 +23,7 @@ $creamColor: rgb(232 230 230);
     font-size: 42px;
     font-weight: 700;
     line-height: 46px;
-    color: $textdark;
+    color: $white;
 }
 
 
@@ -55,7 +55,10 @@ $creamColor: rgb(232 230 230);
 .Hero_section {
 
     position: relative;
+    .curve{
+        
     background: $background;
+    }
 
     .content_section {
         .title {
@@ -70,8 +73,10 @@ $creamColor: rgb(232 230 230);
 
     .img_section {
         img {
-            margin-bottom: -85px;
+            margin-bottom: -360px;
             object-fit: none;
+            z-index: 9999 !important;
+            position: relative;
         }
     }
 }
