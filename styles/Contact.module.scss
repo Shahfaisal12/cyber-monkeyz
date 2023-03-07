@@ -88,3 +88,12 @@ $yellow-color: #a0ca06;
     }
 
 }
+
+@media only screen and (max-width: 600px) {
+
+    .bg_title {
+        .title {
+           font-size: 24px !important;
+        }
+    }
+}

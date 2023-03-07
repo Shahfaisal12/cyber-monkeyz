@@ -187,3 +187,25 @@ $creamColor: rgb(232 230 230);
         transform-origin: bottom;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .content_section {
+        .title {
+            font-size: 35px !important;
+            line-height: 40px !important;
+        }
+
+        .sub_title {
+            line-height: 30px !important;
+            margin-top: 16px !important;
+            font-size: 22px !important;
+           
+        }
+
+        .para p {
+            padding-right: 0px !important;
+        }
+    }
+}

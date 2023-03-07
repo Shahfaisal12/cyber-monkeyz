@@ -40,7 +40,7 @@ const OurServices = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-10">
-                <h1 className= "position-absolute h-100 d-flex align-items-center" data-aos="fade-right">
+                <h1 className= "position-absolute h-100 d-flex align-items-center pb-4 pb-md-0" data-aos="fade-right">
                   Services
                 </h1>
               </div>

@@ -75,9 +75,16 @@ $creamColor: rgb(232 230 230);
     .img_section {
         img {
             margin-bottom: -360px;
-            object-fit: none;
             z-index: 9999 !important;
             position: relative;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content_section {
+        .title {
+            font-size: 22px !important;
         }
     }
 }
@@ -98,7 +105,8 @@ $creamColor: rgb(232 230 230);
     .our_service {
         &:hover .overlay_dev {
             animation: myAnim 1.5s ease 0s 1 normal forwards;
-           }
+        }
+
         cursor: pointer;
 
         .img_sec img {
@@ -114,10 +122,11 @@ $creamColor: rgb(232 230 230);
             right: 0;
             background-color: $background;
             padding: 10px;
-            &:hover{
+
+            &:hover {
                 animation: myAnim 1.5s ease 0s 1 normal forwards;
-               }
-    
+            }
+
 
             .service_title {
                 @include sub-title;
@@ -141,7 +150,7 @@ $creamColor: rgb(232 230 230);
             align-items: end;
             opacity: 1;
             height: auto;
-            
+
         }
 
     }
@@ -153,17 +162,17 @@ $creamColor: rgb(232 230 230);
 }
 
 @keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: rotateX(-70deg);
-		transform-origin: bottom;
-	}
+    0% {
+        opacity: 0;
+        transform: rotateX(-70deg);
+        transform-origin: bottom;
+    }
 
-	100% {
-		opacity: 1;
-		transform: rotateX(0);
-		transform-origin: bottom;
-	}
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+        transform-origin: bottom;
+    }
 }
 
 
@@ -223,6 +232,16 @@ $creamColor: rgb(232 230 230);
                 border: 1px solid #131946;
                 color: #131946;
             }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .talkUs_section {
+        .bg_talkus {
+            padding: 20px;
         }
     }
 }

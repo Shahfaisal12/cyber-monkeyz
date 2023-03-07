@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             <div className="col-md-4 d-none d-md-block">
               <div className={styleHero.img_section}>
-                <img src="assets/monkey.png" className="img-fluid" alt="" />
+                <img src="assets/monkey1.png" className="img-fluid" alt="" />
               </div>
             </div>
 

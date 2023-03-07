@@ -21,7 +21,7 @@ const Contact = () => {
             <div className="col-md-6 d-flex align-items-center">
               <div>
                 <div className={styleContact.sub_title} data-aos="fade-right">
-                  Please fill out the information below <br /> and we'll be in
+                  Please fill out the information below <br className="d-none d-md-block" /> and we'll be in
                   touch soon..
                 </div>
                 <div className={` ${styleContact.form_section} mt-4`}>
