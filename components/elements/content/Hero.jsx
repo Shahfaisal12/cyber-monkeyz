@@ -4,7 +4,7 @@ import styleStrategy from "../../../styles/stategy.module.scss";
 const Hero = () => {
   return (
     <div className="">
-      <div className={` ${styleStrategy.stategy_hero_section} py-4`}>
+      <div className={` ${styleStrategy.stategy_hero_section} pt-4`}>
         <div className="container">
           <div className="row">
             <p>Content</p>

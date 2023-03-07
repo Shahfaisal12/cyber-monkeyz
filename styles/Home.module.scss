@@ -55,9 +55,10 @@ $creamColor: rgb(232 230 230);
 .Hero_section {
 
     position: relative;
-    .curve{
-        
-    background: $background;
+
+    .curve {
+
+        background: $background;
     }
 
     .content_section {
@@ -89,11 +90,15 @@ $creamColor: rgb(232 230 230);
         @include title;
     }
 
-    h1{
-        @include  h1-title ;
+    h1 {
+        @include h1-title;
+
     }
 
     .our_service {
+        &:hover .overlay_dev {
+            animation: myAnim 1.5s ease 0s 1 normal forwards;
+           }
         cursor: pointer;
 
         .img_sec img {
@@ -109,6 +114,10 @@ $creamColor: rgb(232 230 230);
             right: 0;
             background-color: $background;
             padding: 10px;
+            &:hover{
+                animation: myAnim 1.5s ease 0s 1 normal forwards;
+               }
+    
 
             .service_title {
                 @include sub-title;
@@ -116,20 +125,25 @@ $creamColor: rgb(232 230 230);
         }
 
         ul {
+
             display: none;
-            transition: all 0.3s ease;
+            overflow: hidden;
 
             li {
                 @include content;
                 list-style-type: '-  ';
             }
         }
-    }
-    .our_service:hover ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        transition-delay: 0.3s; /* Add this line for transition delay */
+
+        &:hover ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            opacity: 1;
+            height: auto;
+            
+        }
+
     }
 
     p {
@@ -138,6 +152,19 @@ $creamColor: rgb(232 230 230);
 
 }
 
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-70deg);
+		transform-origin: bottom;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0);
+		transform-origin: bottom;
+	}
+}
 
 
 /* /////////////////////////   Our Workd Section ////////////////////// */
@@ -146,7 +173,7 @@ $creamColor: rgb(232 230 230);
     background-color: $lightBlue ;
 
     .title {
-      @include title;
+        @include title;
     }
 
     .bg_img {
@@ -168,15 +195,17 @@ $creamColor: rgb(232 230 230);
 
 ////////////////////////////  Talk Us section  //////////////
 
-.talkUs_section{
-    .bg_talkus{
+.talkUs_section {
+    .bg_talkus {
         background-color: $yellow-color;
-        box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+        box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
         padding: 20px 60px;
-        .title{
+
+        .title {
             @include title;
         }
-        .btn_contact{
+
+        .btn_contact {
             background-color: #131946;
             color: $white;
             font-size: 14px;
@@ -189,7 +218,7 @@ $creamColor: rgb(232 230 230);
             justify-content: center;
             align-items: center;
 
-            &:hover{
+            &:hover {
                 background-color: $white;
                 border: 1px solid #131946;
                 color: #131946;

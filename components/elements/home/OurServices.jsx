@@ -59,7 +59,7 @@ const OurServices = () => {
                             {list.title}
                           </div>
                           <div>
-                            <ul className="">
+                            <ul className="ul-item">
                               <div className="div">
                                 {list.items.map((item, itemIndex) => (
                                   <li key={itemIndex}>{item}</li>

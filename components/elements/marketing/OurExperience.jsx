@@ -27,8 +27,10 @@ const overService = [
 const OurExperience = () => {
   return (
     <>
-      <div className={`${styleExperience.ourExperience_section} py-5`}>
-        <div className="container-fluid">
+      <div className="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C8EEF5" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,117.3C640,107,800,85,960,80C1120,75,1280,85,1360,90.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      <div  className={`${styleExperience.ourExperience_section}`} >  
+      <div className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-12 col-md-4">
               <h1
@@ -80,6 +82,8 @@ const OurExperience = () => {
             </div>
           </div>
         </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C8EEF5" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,117.3C640,107,800,85,960,80C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
       </div>
     </>
   );

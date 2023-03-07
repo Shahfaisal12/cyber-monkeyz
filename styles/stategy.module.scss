@@ -72,8 +72,9 @@ $creamColor: rgb(232 230 230);
             @include para;
             padding-right: 120px
         }
-        h6{
-            @include  h6; 
+
+        h6 {
+            @include h6;
         }
     }
 
@@ -91,24 +92,26 @@ $creamColor: rgb(232 230 230);
 
 .whyStrategy_section {
     .content_section {
-      .title {
-       @include title;
-       font-size: 38px;
-      }
-  
-      .para {
-        p {
-          @include para;
+        .title {
+            @include title;
+            font-size: 38px;
         }
-      }
+
+        .para {
+            p {
+                @include para;
+            }
+        }
     }
-  }
+}
 
 
-  ////////////////// Our Service //////////////
-  
-  .ourExperience_section {
+////////////////// Our Service //////////////
+
+.ourExperience_section {
     background-color: $lightBlue;
+
+
 
     .title {
         @include title;
@@ -117,6 +120,10 @@ $creamColor: rgb(232 230 230);
     }
 
     .our_service {
+        &:hover .overlay_dev {
+            animation: myAnim 1.5s ease 0s 1 normal forwards;
+        }
+
         cursor: pointer;
 
         .img_sec img {
@@ -132,6 +139,10 @@ $creamColor: rgb(232 230 230);
             right: 0;
             background-color: $background;
             padding: 10px;
+
+            &:hover {
+                animation: myAnim 1.5s ease 0s 1 normal forwards;
+            }
 
             .service_title {
                 @include sub-title;
@@ -162,3 +173,17 @@ $creamColor: rgb(232 230 230);
 
 }
 
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: rotateX(-70deg);
+        transform-origin: bottom;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+        transform-origin: bottom;
+    }
+}
