@@ -3,7 +3,7 @@ import styleHero from "../../../styles/Home.module.scss";
 
 const Hero = () => {
   return (
-    <div className={` ${styleHero.Hero_section} overflow-hidden`}>
+    <div className={` ${styleHero.Hero_section}`}>
       <div className={styleHero.curve}>
 
         <div className="container">
