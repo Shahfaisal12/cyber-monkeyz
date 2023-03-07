@@ -3,7 +3,7 @@ import styleStrategy from '../../../styles/stategy.module.scss'
 
 const WhyStrategy = () => {
   return (
-    <div className={` ${styleStrategy.whyStrategy_section} pt-5 pb-0 pb-md-5`}>
+    <div className={` ${styleStrategy.whyStrategy_section}`}>
       <div className="container">
         <div className="row">
           <div className="col-md-6 d-flex align-items-center">

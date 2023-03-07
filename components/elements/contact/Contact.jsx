@@ -4,7 +4,7 @@ import styleContact from "../../../styles/Contact.module.scss";
 const Contact = () => {
   return (
     <>
-      <div className={` ${styleContact.contact_section} overflow-hidden`}>
+      <div className={` ${styleContact.contact_section} overflow-hidden mb-5 pb-0 pb-md-5`}>
         <div className={` ${styleContact.bg_title} position-relative`}>
           <div className="container">
             <div className=" h-100 d-flex align-items-center position-absolute">
@@ -77,9 +77,14 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="img-section" data-aos="fade-up">
+            <div className="col-md-6 d-flex align-items-center">
+              <div className="img-section text-center" data-aos="fade-up">
                 <img src="assets/head-left.png" className="img-fluid" alt="" />
+
+                <h5 className="mb-3">...or simply <br /> reach out to us at:</h5>
+                <p>Phone: +31 6 41884661 <br />
+
+                  info@cybermonkeyz.com</p>
               </div>
             </div>
           </div>

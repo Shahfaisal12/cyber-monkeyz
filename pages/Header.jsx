@@ -9,9 +9,9 @@ const Header = () => {
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               <img
-                src="assets/logo.png"
+                src="assets/logo1.png"
                 className="img-fluid"
-                width="150"
+                width="200"
                 alt=""
               />
             </a>
@@ -57,7 +57,7 @@ const Header = () => {
                           href="/strategy"
                           className=""
                         >
-                          strategy
+                          Services
                         </Link>
                       </li>
                       <li>
