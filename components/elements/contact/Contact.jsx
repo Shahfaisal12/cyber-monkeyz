@@ -4,30 +4,40 @@ import styleContact from "../../../styles/Contact.module.scss";
 const Contact = () => {
   return (
     <>
-      <div className={` ${styleContact.contact_section} overflow-hidden mb-5 pb-0 pb-md-5`}>
+      <div
+        className={` ${styleContact.contact_section} overflow-hidden mb-5 mb-md-3`}
+      >
         <div className={` ${styleContact.bg_title} position-relative`}>
           <div className="container">
-            <div className=" h-100 d-flex align-items-center position-absolute">
-              <div className={`${styleContact.title}`}>Contact us</div>
+            <div className=" h-100 position-absolute">
+              <div className={`${styleContact.title} mt-4`}>Contact us</div>
             </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#DFDEF5" fill-opacity="1" d="M0,256L120,256C240,256,480,256,720,213.3C960,171,1200,85,1320,42.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+            <path
+              fill="#DFDEF5"
+              fill-opacity="0.7"
+              d="M0,256L60,224C120,192,240,128,360,96C480,64,600,64,720,53.3C840,43,960,21,1080,10.7C1200,0,1320,0,1380,0L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
           </svg>
-
+          {/* 
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#DFDEF5" fill-opacity="1" d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,74.7C840,43,960,53,1080,48C1200,43,1320,21,1380,10.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+  
+  */}
         </div>
-        <div className="container">
+        <div className="container" >
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
               <div>
-                <div className={styleContact.sub_title} data-aos="fade-right">
-                  Please fill out the information below <br className="d-none d-md-block" /> and we'll be in
-                  touch soon..
+                <div className={styleContact.sub_title}> {/*  data-aos="fade-right" */}
+                  Please fill out the information below{" "}
+                  <br className="d-none d-md-block" /> and we'll be in touch
+                  soon..
                 </div>
                 <div className={` ${styleContact.form_section} mt-4`}>
                   <form>
                     <div className="row">
-                      <div className="mb-2">
+                      <div className="mb-1">
                         <input
                           type="text"
                           className="form-control"
@@ -36,7 +46,7 @@ const Contact = () => {
                           required
                         />
                       </div>
-                      <div className="mb-2">
+                      <div className="mb-1">
                         <input
                           type="email"
                           className="form-control"
@@ -45,7 +55,7 @@ const Contact = () => {
                           required
                         />
                       </div>
-                      <div className="mb-2">
+                      <div className="mb-1">
                         <input
                           type="text"
                           className="form-control"
@@ -53,7 +63,7 @@ const Contact = () => {
                           placeholder="Phone"
                         />
                       </div>
-                      <div className="mb-2">
+                      <div className="mb-1">
                         <input
                           type="text"
                           className="form-control"
@@ -61,7 +71,7 @@ const Contact = () => {
                           placeholder="Company"
                         />
                       </div>
-                      <div className="mb-2">
+                      <div className="mb-1">
                         <textarea
                           className="form-control"
                           id="exampleFormControlTextarea1"
@@ -69,22 +79,34 @@ const Contact = () => {
                           placeholder="Type your meassage here..."
                         ></textarea>
                       </div>
-                      <div className={`${styleContact.button_div} mt-5`}>
-                        <button className={`${styleContact.btn_submit} btn`}>Submit</button>
+                      <div className={`${styleContact.button_div} mt-3`}>
+                        <button className={`${styleContact.btn_submit} btn`}>
+                          Submit
+                        </button>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="img-section text-center" data-aos="fade-up">
-                <img src="assets/head-left.png" className="img-fluid" alt="" />
+            <div className="col-md-6 order-1 order-md-2">
+              <div className="img-section"> {/* data-aos="fade-up" */}
+                <img
+                  src="assets/head-left.png"
+                  className="img-fluid"
+                  width={400}
+                  alt=""
+                />
 
-                <h5 className="mb-3">...or simply <br /> reach out to us at:</h5>
-                <p>Phone: +31 6 41884661 <br />
-
-                  info@cybermonkeyz.com</p>
+                <div className="text-content mx-5">
+                  <h5 className="mb-3">
+                    ...or simply <br /> reach out to us at:
+                  </h5>
+                  <p>
+                    Phone: +31 6 41884661 <br />
+                    info@cybermonkeyz.com
+                  </p>
+                </div>
               </div>
             </div>
           </div>

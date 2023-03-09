@@ -57,7 +57,7 @@ const Header = () => {
                           href="/strategy"
                           className=""
                         >
-                          Services
+                          Strategy
                         </Link>
                       </li>
                       <li>

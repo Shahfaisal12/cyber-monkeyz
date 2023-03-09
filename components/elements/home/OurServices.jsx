@@ -34,11 +34,11 @@ const overService = [
 const OurServices = () => {
   return (
     <>
-      <div className={`${styleServices.ourServices_section} py-5`}>
+      <div className={`${styleServices.ourServices_section} pt-5`}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h1 className={styleServices.title} data-aos="fade-right">
+              <h1 className={styleServices.title}> {/* data-aos="fade-right" */}
                 Our Services..
               </h1>
               <div className="row">

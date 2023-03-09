@@ -50,7 +50,11 @@ const TalkUs = () => {
               </p>
 
               <div className="text-center">
-                <Link href="/contactUs" className={`${styletalk.btn_contact} btn`} passHref>
+                <Link
+                  href="/contactUs"
+                  className={`${styletalk.btn_contact} btn`}
+                  passHref
+                >
                   Contact us
                 </Link>
               </div>

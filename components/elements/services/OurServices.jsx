@@ -40,13 +40,13 @@ const OurServices = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-10">
-                <h1 className= "position-absolute h-100 d-flex align-items-center pb-4 pb-md-0" data-aos="fade-right">
+                <h1 className= "position-absolute text-dark h-100 d-flex align-items-center pb-4 pb-md-0"> {/*  data-aos="fade-right" */}
                   Services
                 </h1>
               </div>
             </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C8EEF5" fill-opacity="1" d="M0,256L120,245.3C240,235,480,213,720,192C960,171,1200,149,1320,138.7L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270"><path fill="#C8EEF5" fill-opacity="1" d="M0,256L120,245.3C240,235,480,213,720,192C960,171,1200,149,1320,138.7L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
         </div>
         <div className="container mb-5">
           <div className="row justify-content-center">

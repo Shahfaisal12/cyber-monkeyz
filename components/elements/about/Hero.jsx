@@ -27,24 +27,29 @@ const Hero = () => {
     <div className={` ${styleabout.about_section} overflow-hidden`}>
       <div className={` ${styleabout.bg_title} position-relative`}>
         <div className="container">
-          <div className="h-100 d-flex align-items-center position-absolute">
-            <div className={` ${styleabout.title}`}>About us</div>
+          <div className="h-100 position-absolute">
+            <div className={` ${styleabout.title} mt-0 mt-md-4`}>About us</div>
           </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#DFDEF5" fill-opacity="0.7" d="M0,256L60,224C120,192,240,128,360,96C480,64,600,64,720,53.3C840,43,960,21,1080,10.7C1200,0,1320,0,1380,0L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+       {
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        //  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#DFDEF5" fill-opacity="1" d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,74.7C840,43,960,53,1080,48C1200,43,1320,21,1380,10.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+        /*  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#DFDEF5"
             fill-opacity="1"
             d="M0,256L120,256C240,256,480,256,720,213.3C960,171,1200,85,1320,42.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
           ></path>
-        </svg>
+        </svg> */
+       }
       </div>
       <div className="container">
         <div className="row">
           {aboutData.map((item, index) => (
             <div
-              className={`row ${index === 0 ? "" : "my-4 my-md-5"}`}
+              className={`row ${index === 0 ? "" : "mb-4 mb-md-5"}`}
               key={index}
             >
               {index % 2 === 0 ? (

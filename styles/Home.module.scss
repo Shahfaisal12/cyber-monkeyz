@@ -14,14 +14,14 @@ $creamColor: rgb(232 230 230);
 
 @mixin title {
     font-size: 42px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 46px;
     color: $textdark;
 }
 
 @mixin h1-title {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 46px;
     color: $white;
 }
