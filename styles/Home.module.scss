@@ -74,9 +74,11 @@ $creamColor: rgb(232 230 230);
 
     .img_section {
         img {
-            margin-bottom: -360px;
+            // margin-bottom: -360px;
             z-index: 9999 !important;
-            position: relative;
+            // position: relative;
+            position: absolute;
+            top: 30px;
         }
     }
 }
@@ -122,6 +124,7 @@ $creamColor: rgb(232 230 230);
             right: 0;
             background-color: $background;
             padding: 10px;
+            
 
             &:hover {
                 animation: myAnim 1.5s ease 0s 1 normal forwards;
@@ -135,8 +138,10 @@ $creamColor: rgb(232 230 230);
 
         ul {
 
-            display: none;
+            // display: none;
             overflow: hidden;
+            height: 0px;
+            transition: all 1.5s ;
 
             li {
                 @include content;
@@ -149,7 +154,7 @@ $creamColor: rgb(232 230 230);
             justify-content: space-between;
             align-items: end;
             opacity: 1;
-            height: auto;
+            height: 100px;
 
         }
 
@@ -161,9 +166,10 @@ $creamColor: rgb(232 230 230);
 
 }
 
+
 @keyframes myAnim {
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: rotateX(-70deg);
         transform-origin: bottom;
     }

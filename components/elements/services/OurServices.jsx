@@ -68,7 +68,7 @@ const OurServices = () => {
                     <Link href={`/${list.path}`} passHref>
                       <div
                         className={` ${styleServices.our_service} position-relative`}
-                        data-aos="flip-left"
+                        data-aos="fade-up"
                       >
                         <div className={styleServices.img_sec}>
                           <img src={list.image} className="img-fluid" alt="" />

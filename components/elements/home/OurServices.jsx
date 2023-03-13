@@ -38,7 +38,7 @@ const OurServices = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h1 className={styleServices.title}> {/* data-aos="fade-right" */}
+              <h1 className={styleServices.title}>
                 Our Services..
               </h1>
               <div className="row">
@@ -47,7 +47,7 @@ const OurServices = () => {
                     <Link href={`/${list.path}`} passHref>
                       <div
                         className={` ${styleServices.our_service} position-relative`}
-                        data-aos="flip-left"
+                        data-aos="fade-up"
                       >
                         <div className={styleServices.img_sec}>
                           <img src={list.image} className="img-fluid" alt="" />

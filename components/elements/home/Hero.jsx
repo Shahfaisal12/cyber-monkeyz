@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="row">
             <div className="col-md-8 d-flex align-items-center pt-5">
               <div className={styleHero.content_section}>
-                <div className={styleHero.title} data-aos="fade-down-right">
+                <div className={styleHero.title} >{/* data-aos="fade-down-right" */}
                   An <span>innovative, young-minded</span> &
                   <span>all-inclusive digital agency</span> that elevates your
                   business to new heights in today's online world

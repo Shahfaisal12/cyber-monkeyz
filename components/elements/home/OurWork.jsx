@@ -20,7 +20,7 @@ const OurWork = () => {
         <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
-                        <h1 className={`${styleWork.title} mb-5 `}>Our Work..</h1> {/*  data-aos="fade-up-right" */}
+                        <h1 className={`${styleWork.title} mb-5 `}>Our Work..</h1>
                         <div className="row">
                             {images.map((item) => (
                                 <div className="col-md-4 mt-4">
@@ -34,7 +34,7 @@ const OurWork = () => {
                 </div>
             </div>
             </div>  
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C8EEF5" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,149.3C640,171,800,213,960,224C1120,235,1280,213,1360,202.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260"><path fill="#C8EEF5" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,149.3C640,171,800,213,960,224C1120,235,1280,213,1360,202.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
 
         </div>
     )
