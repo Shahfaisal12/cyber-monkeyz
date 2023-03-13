@@ -54,6 +54,7 @@ $yellow-color: #a0ca06;
             border: 2px solid $red-Color;
             border-radius: 0px;
             box-shadow: none;
+            transition: all 0.5s;
 
             &:hover {
                 border: 1px solid $red-Color;
@@ -87,11 +88,12 @@ $yellow-color: #a0ca06;
         }
     }
 
-    h5{
+    h5 {
         font-size: 18px;
         font-weight: 600;
     }
-    p{
+
+    p {
         font-size: 14px;
         font-weight: 600;
     }
@@ -102,7 +104,7 @@ $yellow-color: #a0ca06;
 
     .bg_title {
         .title {
-           font-size: 24px !important;
+            font-size: 24px !important;
         }
     }
 }
