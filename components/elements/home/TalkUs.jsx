@@ -8,7 +8,7 @@ const TalkUs = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <div className={styletalk.bg_talkus} data-aos="fade-up">
+            <div className={styletalk.bg_talkus}  >
               <div className="d-flex gap-3 align-items-center justify-content-center">
                 <svg
                   role="presentation"

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="">
 <div className={` ${styleStrategy.stategy_hero_section} pt-5` }>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row">
           <p>Design</p>
           <div className="col-md-8 d-flex align-items-center">

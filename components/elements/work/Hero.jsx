@@ -54,12 +54,12 @@ const Hero = () => {
     return (
         <div className={` ${stylework.work_section}`}>
             <div className={` ${stylework.bg_title} py-3`}>
-                <div className="container">
+                <div className="container" data-aos="fade-up">
                     <div className={stylework.title}>Latest Work</div>
                     <p>View some of our recent work</p>
                 </div>
             </div>
-            <div className="container pt-4">
+            <div className="container pt-4 w-75" data-aos="fade-up">
                 <div className="row">
                     {
                         workData.map((item, index) => (

@@ -1,5 +1,5 @@
 $white: #FFFFFF;
-$yellow-color: #d6fb51;
+$yellow-color: #fbd912;
 $background: #25318D;
 $textdark: #131946;
 $black: #000000;
@@ -53,15 +53,15 @@ $creamColor: rgb(232 230 230);
 /////////////////////////////  HERO SECTION  ///////////////////
 
 .Hero_section {
-
     position: relative;
-
+    // height: 80vh;
     .curve {
-
         background: $background;
     }
 
     .content_section {
+        // height: 80vh;
+
         .title {
             @include h1-title;
         }
@@ -78,7 +78,25 @@ $creamColor: rgb(232 230 230);
             z-index: 9999 !important;
             // position: relative;
             position: absolute;
-            top: 30px;
+            top: -20px;
+        }
+    }
+
+    .button_div {
+
+        .btn_submit {
+            background-color: $yellow-color;
+            border-radius: 0px;
+            width: 150px;
+            padding: 4px;
+            color: $white;
+            font-size: 24px;
+
+            &:hover {
+                color: $black;
+                background-color: $yellow-color;
+                transition: 0.5s;
+            }
         }
     }
 }
@@ -90,6 +108,7 @@ $creamColor: rgb(232 230 230);
         }
     }
 }
+
 
 /* /////////////////////  Our Services  ////////////////////////// */
 
@@ -186,6 +205,7 @@ $creamColor: rgb(232 230 230);
 
 .ourWork_section {
     background-color: $lightBlue ;
+    // height: calc(100vh - 220px);
 
     .title {
         @include title;
@@ -193,7 +213,7 @@ $creamColor: rgb(232 230 230);
 
     .bg_img {
         background-color: $creamColor;
-        padding: 60px;
+        padding: 30px;
 
         img {
             cursor: pointer;
@@ -206,6 +226,7 @@ $creamColor: rgb(232 230 230);
 
     }
 }
+
 
 
 ////////////////////////////  Talk Us section  //////////////

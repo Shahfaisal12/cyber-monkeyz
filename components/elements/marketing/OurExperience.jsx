@@ -38,7 +38,7 @@ const OurExperience = () => {
                 
               >
                 Our Expertise..
-              </h1> {/* data-aos="fade-right" */}
+              </h1> 
             </div>
             <div className="col-12 col-md-8 mt-3 mt-md-0">
               <div className="row">
@@ -47,7 +47,6 @@ const OurExperience = () => {
                     <Link href={`/${list.path}`} passHref>
                       <div
                         className={` ${styleExperience.our_service} position-relative`}
-                        data-aos="flip-left"
                       >
                         <div className={styleExperience.img_sec}>
                           <img src={list.image} className="img-fluid" alt="" />

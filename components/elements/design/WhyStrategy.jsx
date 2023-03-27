@@ -3,22 +3,22 @@ import styleStrategy from "../../../styles/stategy.module.scss";
 
 const WhyStrategy = () => {
   return (
-    <div className={` ${styleStrategy.whyStrategy_section}`}  data-aos="fade-up">
+    <div className={styleStrategy.whyStrategy_section}>
       <div className="container">
         <div className="row">
           <div className="col-md-6 d-flex align-items-center">
-            <div className={styleStrategy.img_section} > {/* data-aos="zoom-in" */}
+            <div className={styleStrategy.img_section} >
               <img src="assets/monkey-head.png" className="img-fluid" alt="" />
             </div>
           </div>
           <div className="col-md-6 mt-5 mt-md-0 d-flex align-items-center">
             <div className={styleStrategy.content_section}>
-              <div className={styleStrategy.title}> {/* data-aos="fade-right" */}
+              <div className={styleStrategy.title}>
                 {" "}
                 Why us?
               </div>
               <div className={styleStrategy.para}>
-                <p className="my-3 my-md-5" > {/* data-aos="fade-left" */}
+                <p className="my-3 my-md-5" >
                   We will work closely with you to craft a refreshing brand
                   identity that includes an engaging web design and a functional
                   visual & UX design. We specialise in both; back-end and

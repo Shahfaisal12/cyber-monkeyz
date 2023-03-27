@@ -10,7 +10,7 @@ const Contact = () => {
         <div className={` ${styleContact.bg_title} position-relative`}>
           <div className="container">
             <div className=" h-100 position-absolute">
-              <div className={`${styleContact.title} mt-4`}>Contact us</div>
+              <div className={`${styleContact.title} mt-4`} data-aos="fade-up">Contact us</div>
             </div>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
@@ -20,16 +20,12 @@ const Contact = () => {
               d="M0,256L60,224C120,192,240,128,360,96C480,64,600,64,720,53.3C840,43,960,21,1080,10.7C1200,0,1320,0,1380,0L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
             ></path>
           </svg>
-          {/* 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#DFDEF5" fill-opacity="1" d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,74.7C840,43,960,53,1080,48C1200,43,1320,21,1380,10.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-  
-  */}
         </div>
-        <div className="container" >
+        <div className="container"  data-aos="fade-up">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
               <div>
-                <div className={styleContact.sub_title}> {/*  data-aos="fade-right" */}
+                <div className={styleContact.sub_title}>
                   Please fill out the information below{" "}
                   <br className="d-none d-md-block" /> and we'll be in touch
                   soon..
@@ -90,7 +86,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-md-6 order-1 order-md-2">
-              <div className="img-section"> {/* data-aos="fade-up" */}
+              <div className="img-section"> {/*   */}
                 <img
                   src="assets/head-left.png"
                   className="img-fluid"

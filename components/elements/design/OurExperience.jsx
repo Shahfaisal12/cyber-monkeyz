@@ -47,7 +47,6 @@ const OurExperience = () => {
                     <Link href={`/${list.path}`} passHref>
                       <div
                         className={` ${styleExperience.our_service} position-relative`}
-                        data-aos="flip-left"
                       >
                         <div className={styleExperience.img_sec}>
                           <img src={list.image} className="img-fluid" alt="" />

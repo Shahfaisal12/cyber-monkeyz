@@ -40,7 +40,7 @@ const OurServices = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-10">
-                <h1 className= "position-absolute text-dark h-100 d-flex align-items-center pb-4 pb-md-0"> {/*  data-aos="fade-right" */}
+                <h1 className= "position-absolute text-dark h-100 d-flex align-items-center pb-4 pb-md-0" data-aos="fade-up"> {/*  data-aos="fade-right" */}
                   Services
                 </h1>
               </div>
@@ -51,7 +51,7 @@ const OurServices = () => {
         <div className="container mb-5">
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <div className="row">
+              <div className="row" data-aos="fade-up">
                 <p>
                   Cyber Monkeyz provide a wide range of digital solutions to
                   help your businesses strive and prosper online. Including:
@@ -68,7 +68,7 @@ const OurServices = () => {
                     <Link href={`/${list.path}`} passHref>
                       <div
                         className={` ${styleServices.our_service} position-relative`}
-                        data-aos="fade-up"
+                         
                       >
                         <div className={styleServices.img_sec}>
                           <img src={list.image} className="img-fluid" alt="" />
